@@ -1,9 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-let test: string = 'test';
-test = 'test2';
+// let test: string = 'test';
+// test = 'test2';
 
 function App() {
   return (
