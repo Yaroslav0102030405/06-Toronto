@@ -4,8 +4,6 @@ import { Imenu } from "../../types/types";
 interface MenuProps {
   menus: Imenu[];
 }
-
-const Id = "#home";
 const Menu: React.FC<MenuProps> = ({ menus }) => {
   return (
     <>

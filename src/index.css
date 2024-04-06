@@ -15,3 +15,30 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  cursor: url("./Image/Cursor/1111.png"), auto;
+}
+
+a {
+  cursor: url("./Image/Cursor/11111.png"), auto;
+}
+
+button {
+  cursor: url("./Image/Cursor/11111.png"), auto;
+}
+
+add scrollbar .window {
+  overflow: auto;
+  border-radius: 5px 0 0 5px;
+}
+
+::-webkit-scrollbar {
+  /* background-color: dodgerblue; */
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: crimson;
+}
