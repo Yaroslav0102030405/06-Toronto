@@ -12,12 +12,12 @@ const Hero = () => {
               <h1 className="max-w-[621px] text-[56px] mb-14 text-center font-bold text-blue-400 leading-relaxed">
                 Appliance installation in{" "}
                 <span className="text-red-500">
-                  T<span className="text-yellow-400">o</span>
-                  <span className="text-red-400">r</span>
-                  <span className="text-green-400">o</span>
-                  <span className="text-orange-400">n</span>
-                  <span className="text-blue-400">t</span>
-                  <span className="text-yellow-400">o</span>
+                  T<span className="text-white">o</span>
+                  <span className="text-red-500">r</span>
+                  <span className="text-white">o</span>
+                  <span className="text-red-500">n</span>
+                  <span className="text-white">t</span>
+                  <span className="text-red-500">o</span>
                 </span>
               </h1>
               <p className="max-w-[600px] mb-20 text-lg text-center text-blue-400 leading-snug">

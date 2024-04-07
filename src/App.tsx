@@ -4,6 +4,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Advantages from "./components/Advantages/Advantages";
+import Footer from "./components/Footer/Footer";
 
 // let test: string = 'test';
 // test = 'test2';
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Advantages />
       </main>
+      <Footer />
     </>
   );
 }
