@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../reusable-components/Button/Button";
 import HeroImage from "../../Image/hero-image2.png";
+// import Hero2 from "../../Image/logo2.png";
 
 const Hero = () => {
   return (

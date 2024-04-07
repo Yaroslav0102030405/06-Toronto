@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Advantages from "./components/Advantages/Advantages";
 import Footer from "./components/Footer/Footer";
+import Installation from "./components/Installation/Instalation";
 
 // let test: string = 'test';
 // test = 'test2';
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Hero />
         <Advantages />
+        <Installation />
       </main>
       <Footer />
     </>
