@@ -6,11 +6,11 @@ import Hero from "./components/Hero/Hero";
 import Advantages from "./components/Advantages/Advantages";
 import Footer from "./components/Footer/Footer";
 import Installation from "./components/Installation/Instalation";
+import Accordion from "./components/Accordion/Accordion";
 
-// let test: string = 'test';
-// test = 'test2';
+interface Props {}
 
-function App() {
+const App = (props: Props) => {
   return (
     <>
       <Header />
@@ -18,10 +18,15 @@ function App() {
         <Hero />
         <Advantages />
         <Installation />
+        <Accordion
+          title="Dishwasher"
+          text1="Inspect supply line condition"
+          text2="Inspect drain hose condition"
+        />
       </main>
       <Footer />
     </>
   );
-}
+};
 
 export default App;
