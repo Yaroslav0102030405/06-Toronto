@@ -8,7 +8,7 @@ interface IconsProps {
 const IconsAdvantages: React.FC<IconsProps> = ({ icons }) => {
   return (
     <>
-      <ul className="flex flex-wrap justify-between desktop:gap-[26px] tablet:gap-[16px]">
+      <ul className="flex flex-wrap justify-between mobile:gap-[16px] tablet:gap-[16px] desktop:gap-[26px]">
         {icons.map((icon) => (
           <li
             className="w-[362px] py-12 text-blue-400 px-14 rounded-3xl border-solid border hover:scale-105 hover:bg-white"

@@ -33,8 +33,8 @@ const Accordion = ({
   text10,
   text11,
   text12, // text13,
-} // text14,
-: Props) => {
+  // text14,
+}: Props) => {
   const [isAccordion, setAccordion] = React.useState<boolean>(false);
   return (
     <>
@@ -43,7 +43,7 @@ const Accordion = ({
           <div className="accordion__wapper flex flex-col gap-2.5 max-w-[600px] m-auto ">
             {/* <div className="accordion   items-center "> */}
             <button
-              className="text-xl flex items-center justify-between p-3.5 border rounded-xl hover:bg-white focus:bg-white"
+              className="text-xl flex items-center justify-between p-3.5 border rounded-xl hover:bg-white"
               onClick={() => setAccordion(!isAccordion)}
             >
               <span className="text-blue-400">{title}</span>
