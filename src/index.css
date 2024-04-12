@@ -64,14 +64,23 @@ add scrollbar .window {
 
 .sliderWrqp {
   position: fixed;
-  inset: 0;
-  z-index: 999;
+  /* inset: 0; */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  z-index: 700;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+  transition: 0.5s;
 }
 
 .sliderWrqp .btnClose,
@@ -82,15 +91,12 @@ add scrollbar .window {
   cursor: url("./Image/Cursor/rtrtr\ \(1\).png"), auto;
   opacity: 0.6;
   color: #fff;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .btnClose:hover,
-.btnClose:focus,
 .btnNext:hover,
-.btnNext:focus,
-.btnPrev:hover,
-.btnPrev:focus {
+.btnPrev:hover {
   opacity: 1;
 }
 
@@ -110,26 +116,26 @@ add scrollbar .window {
   transform: translateY(-50%);
   right: 40px;
 }
-/* 
-.fullScreenImage {
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .fullScreenImage {
-  width: 80%;
-  height: 80%;
+  width: calc(90% - 40px);
+  height: calc(90% - 40px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* .fullScreenImage {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
 .fullScreenImage img {
   max-width: 100%;
   max-height: 100%;
   pointer-events: none;
-  user-select: noneS;
+  user-select: none;
 }
