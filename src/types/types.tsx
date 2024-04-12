@@ -8,3 +8,7 @@ export interface Icons {
   title: string;
   text: string;
 }
+
+export interface Images {
+  img: string;
+}

@@ -7,6 +7,7 @@ import Advantages from "./components/Advantages/Advantages";
 import Footer from "./components/Footer/Footer";
 import Installation from "./components/Installation/Instalation";
 import Accordion from "./components/Accordion/Accordion";
+import GalleryImages from "./components/GalleryImages/GalleryImages";
 
 interface Props {}
 
@@ -18,6 +19,7 @@ const App = (props: Props) => {
         <Hero />
         <Advantages />
         <Installation />
+        <GalleryImages />
         <Accordion
           title="Dishwasher"
           text1="Inspect supply line condition"
@@ -32,8 +34,6 @@ const App = (props: Props) => {
           text10="Inspect interior tub condition"
           text11="Inspect and clean drain"
           text12="basket Inspect cutlery basket condition"
-          // text13="Inspect rack condition"
-          // text14="Run cycle with cleaning agent"
         />
         <Accordion
           title="Refrigerator"
@@ -49,8 +49,6 @@ const App = (props: Props) => {
           text10="Inspect water dispenser"
           text11="Inspect waterline condition"
           text12="Inspect water valve condition"
-          // text13="Check level on refrigerator"
-          // text14="Check and clean condenser coils"
         />
         <Accordion
           title="Range Hood"
