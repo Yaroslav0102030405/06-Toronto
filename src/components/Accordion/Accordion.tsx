@@ -14,9 +14,6 @@ interface Props {
   text10?: string;
   text11?: string;
   text12?: string;
-  //   text13?: string;
-  //   text14?: string;
-  //   text15?: string;
 }
 
 const Accordion = ({
@@ -32,8 +29,7 @@ const Accordion = ({
   text9,
   text10,
   text11,
-  text12, // text13,
-  // text14,
+  text12,
 }: Props) => {
   const [isAccordion, setAccordion] = React.useState<boolean>(false);
   return (
