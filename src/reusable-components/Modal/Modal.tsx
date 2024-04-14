@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({ active, setActive }: any) => {
+const Modal = ({ active, setActive, children }: any) => {
   //   const [active, setlActive] = React.useState<boolean>(true);
   return (
     <>
@@ -10,8 +10,10 @@ const Modal = ({ active, setActive }: any) => {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="modal__content p-5 rounded-xl bg-white h-[200px] w-[400px]"
-        ></div>
+          className={active ? "modal__content active" : "modal__content"}
+        >
+          {children}
+        </div>
       </div>
     </>
   );
