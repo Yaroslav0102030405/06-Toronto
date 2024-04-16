@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Installation from "./components/Installation/Instalation";
 import Accordion from "./components/Accordion/Accordion";
 import GalleryImages from "./components/GalleryImages/GalleryImages";
-// import Modal from "./reusable-components/Modal/Modal";
+import MobileMenu from "./reusable-components/MobileMenu/MobileMenu";
 
 interface Props {}
 
@@ -114,6 +114,7 @@ const App = (props: Props) => {
       </main>
       {/* <Modal /> */}
       <Footer />
+      <MobileMenu />
     </>
   );
 };

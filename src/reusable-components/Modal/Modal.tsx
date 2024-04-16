@@ -1,7 +1,6 @@
 import React from "react";
 
 const Modal = ({ active, setActive, children }: any) => {
-  //   const [active, setlActive] = React.useState<boolean>(true);
   return (
     <>
       <div

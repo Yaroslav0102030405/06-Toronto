@@ -6,7 +6,7 @@ import HeroImage from "../../Image/hero-image2.png";
 const Hero = () => {
   return (
     <>
-      <section id="home" className="tablet:py-24 bg-black">
+      <section id="home" className="bg-black tablet:py-24">
         <div className="container desktop mx-auto px-3.5">
           <div className="flex">
             <div className="left">
@@ -27,7 +27,7 @@ const Hero = () => {
               </p>
               <Button />
             </div>
-            <div className="right hidden tablet:block">
+            <div className="hidden right tablet:block">
               <img src={HeroImage} alt="male plumber" />
             </div>
           </div>

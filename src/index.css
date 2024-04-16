@@ -43,10 +43,6 @@ add scrollbar .window {
   background-color: crimson;
 }
 
-/* .wapper > img {
-  max-width: 200%;
-} */
-
 .item {
   /* cursor: pointer; */
   cursor: url("./Image/Cursor/cursor-zoom.png"), auto;
@@ -160,10 +156,7 @@ add scrollbar .window {
   max-width: 400px;
   padding: 20px;
   border-radius: 12px;
-  /* background-color: red; */
   background-color: white;
-  /* width: 400px;
-  height: 400px; */
   transform: scale(0.5);
   transition: 0.4s all;
 }
