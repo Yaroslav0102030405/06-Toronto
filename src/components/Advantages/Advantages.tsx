@@ -44,7 +44,7 @@ const Advantages = () => {
   ];
   return (
     <>
-      <section className="advantages py-12 bg-black">
+      <section id="services" className="py-12 bg-black advantages">
         <div className="container desktop mx-auto px-3.5">
           <h2 className="text-center text-blue-400 mb-12 text-[45px] font-bold leading-tight">
             By choosing us you will receive

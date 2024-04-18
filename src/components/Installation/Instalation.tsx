@@ -3,13 +3,13 @@ import Phone from "../Phone/Phone";
 const Installation = () => {
   return (
     <>
-      <section className="installation py-24 bg-black">
+      <section id="call" className="py-24 bg-black installation">
         <div className="container mx-auto px-3.5">
-          <div className="wqpper p-7 border rounded-3xl">
-            <h3 className="text-4xl mb-10 text-center text-blue-400">
+          <div className="border wqpper p-7 rounded-3xl">
+            <h3 className="mb-10 text-4xl text-center text-blue-400">
               Appliance installation
             </h3>
-            <p className="text-xl mb-10 text-center text-blue-400">
+            <p className="mb-10 text-xl text-center text-blue-400">
               Trans Global Service will install all appliances in your home. We
               install both gas and electric appliances, new installations, or we
               can remove and replace. We offer delivery and haul away service on

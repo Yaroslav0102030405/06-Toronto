@@ -34,10 +34,10 @@ const Accordion = ({
   const [isAccordion, setAccordion] = React.useState<boolean>(false);
   return (
     <>
-      <section className="bg-black pb-2.5">
+      <section id="guarantee" className="bg-black pb-2.5">
         <div className="container mx-auto px-3.5">
           <div className="accordion__wapper flex flex-col gap-2.5 max-w-[600px] m-auto ">
-            {/* <div className="accordion   items-center "> */}
+            {/* <div className="items-center accordion "> */}
             <button
               className="text-xl flex items-center justify-between p-3.5 border rounded-xl hover:bg-white"
               onClick={() => setAccordion(!isAccordion)}
@@ -77,7 +77,7 @@ const Accordion = ({
                   : "grid-rows-[0fr] opacity-0"
               }`}
             >
-              <p className="overflow-hidden text-black p-3">
+              <p className="p-3 overflow-hidden text-black">
                 {text1}
                 <br />
                 {text2} <br />

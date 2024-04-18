@@ -320,7 +320,7 @@ add scrollbar .window {
   position: absolute;
   top: 0;
   width: 30px;
-  background-color: #fff;
+  background-color: #60a5fa;
   height: 3px;
 }
 
@@ -329,7 +329,7 @@ add scrollbar .window {
   position: absolute;
   top: 14px;
   width: 30px;
-  background-color: #fff;
+  background-color: #60a5fa;
   height: 3px;
 }
 
@@ -338,32 +338,20 @@ add scrollbar .window {
   position: absolute;
   bottom: 0;
   width: 30px;
-  background-color: #fff;
+  background-color: #60a5fa;
   height: 3px;
 }
 
 .mobile {
   height: 100vh;
   width: 100vw;
-  background-color: aqua;
+  background-color: #60a5fa;
   position: fixed;
   top: 0;
   left: 0;
   opacity: 0;
   pointer-events: none;
-}
-
-.mobile-content {
-  padding: 20px;
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  background-color: #fff;
-  /* pointer-events: none; */
-  transform: translateX(0);
-  transition: 0.5s all;
-  overflow-y: hidden;
-  z-index: 9999;
+  transition: opacity 250ms linear;
 }
 
 .mobile.active {
@@ -371,7 +359,27 @@ add scrollbar .window {
   pointer-events: all;
 }
 
-.mobile-content.active {
-  /* pointer-events: all; */
+.mobile-content {
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
   transform: translateX(-100%);
+  overflow-y: hidden;
+  z-index: 9999;
+  transition: transform 250ms linear;
+}
+
+.mobile-content.active {
+  transform: translateX(0);
+}
+
+/* Scroll */
+:root {
+  scroll-behavior: smooth;
 }

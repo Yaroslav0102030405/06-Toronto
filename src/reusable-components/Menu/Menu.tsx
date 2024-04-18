@@ -20,55 +20,38 @@ const Menu = ({ active, setActive }: any) => {
         ))}
       </ul> */}
 
-      <nav>
-        <ul className="hidden desktop:flex tablet:flex gap-x-10">
-          <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-            <a href="#">About</a>
-          </li>
-          <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-            <a href="#">Guarantee</a>
-          </li>
-          <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-            <a href="#">Works</a>
-          </li>
-          <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-            <a href="#">Сall us</a>
-          </li>
-          <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-            <a href="#">Services</a>
-          </li>
-        </ul>
-      </nav>
-
       {/* <nav className="nav"> */}
       <div
         className={active ? "mobile active" : "mobile"}
         onClick={() => setActive(false)}
       >
-        <div className="mobile-content" onClick={(e) => e.stopPropagation()}>
-          <ul className="desktop:flex tablet:flex gap-x-10">
+        <div
+          className={active ? "mobile-content active" : "mobile-content"}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <ul className="flex flex-col text-center gap-[15px]">
             <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-              <a href="#" onClick={() => setActive(false)}>
+              <a href="#about" onClick={() => setActive(false)}>
                 About
               </a>
             </li>
             <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-              <a href="#" onClick={() => setActive(false)}>
+              <a href="#guarantee" onClick={() => setActive(false)}>
                 Guarantee
               </a>
             </li>
             <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-              <a href="#" onClick={() => setActive(false)}>
+              <a href="#works" onClick={() => setActive(false)}>
                 Works
               </a>
             </li>
             <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-              <a href="#" onClick={() => setActive(false)}>
+              <a href="#call" onClick={() => setActive(false)}>
                 Сall us
               </a>
             </li>
             <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
-              <a href="#" onClick={() => setActive(false)}>
+              <a href="#services" onClick={() => setActive(false)}>
                 Services
               </a>
             </li>

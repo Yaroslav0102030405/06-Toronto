@@ -39,7 +39,7 @@ const Gallery: React.FC<ImagesProps> = ({ images }) => {
   };
 
   return (
-    <section className="gallery py-16 bg-black">
+    <section id="works" className="py-16 bg-black gallery">
       <div className="container desktop mx-auto px-3.5">
         <div>
           {modalOpen && (

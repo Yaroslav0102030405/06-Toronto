@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../../reusable-components/Logo/Logo";
 import Menu from "../../reusable-components/Menu/Menu";
 // import { Imenu } from "../../types/types";
+import Nav from "../Nav/Nav";
 
 const Header = () => {
   const [mobileActive, setMobilelActive] = useState<boolean>(false);
@@ -24,6 +25,7 @@ const Header = () => {
             >
               <span />
             </button>
+            <Nav />
             <Menu active={mobileActive} setActive={setMobilelActive} />
           </div>
         </div>
