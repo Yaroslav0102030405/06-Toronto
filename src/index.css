@@ -300,3 +300,78 @@ add scrollbar .window {
   margin-right: auto;
   margin-left: auto;
 } */
+/* .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.mobile-menu {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  background-color: #fff;
+  height: 3px;
+}
+
+.mobile-menu span {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 30px;
+  background-color: #fff;
+  height: 3px;
+}
+
+.mobile-menu::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  background-color: #fff;
+  height: 3px;
+}
+
+.mobile {
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-content {
+  padding: 20px;
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  /* pointer-events: none; */
+  transform: translateX(0);
+  transition: 0.5s all;
+  overflow-y: hidden;
+  z-index: 9999;
+}
+
+.mobile.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-content.active {
+  /* pointer-events: all; */
+  transform: translateX(-100%);
+}
