@@ -1,6 +1,12 @@
-import React from "react";
+import { useEffect } from "react";
 
 const Modal = ({ active, setActive, children }: any) => {
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.overflow = active ? "hidden" : "auto";
+    }
+  }, [active]);
   return (
     <>
       <div

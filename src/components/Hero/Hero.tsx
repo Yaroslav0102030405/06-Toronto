@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../reusable-components/Button/Button";
 import HeroImage from "../../Image/hero-image2.png";
 // import Hero2 from "../../Image/logo2.png";
+import TabletHeroImg from "../../Image/tablet-hero-image2.png";
 
 const Hero = () => {
   return (
@@ -28,7 +29,21 @@ const Hero = () => {
               <Button />
             </div>
             <div className="hidden right tablet:block">
-              <img src={HeroImage} alt="male plumber" />
+              {/* <img src={HeroImage} alt="male plumber" /> */}
+              {/* <picture>
+                <source
+                  srcSet={TabletHeroImg}
+                  media="(min-width: 768px) and (max-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source srcSet={HeroImage} media="(min-width: 1200px)" />
+                <img srcSet={HeroImage} alt="male plumber" />
+              </picture> */}
+              <img
+                srcSet={`${TabletHeroImg} 360w, ${HeroImage} 520w`}
+                sizes="(max-width: 1170px) 70vw, (min-width: 1170px) 35vw, 100vw"
+                alt="male plumber"
+              />
             </div>
           </div>
         </div>

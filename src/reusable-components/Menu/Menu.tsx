@@ -1,26 +1,14 @@
-import { useState } from "react";
-// import { Imenu } from "../../types/types";
-
-// interface MenuProps {
-//   menus: Imenu[];
-// }
+import { useEffect } from "react";
 
 const Menu = ({ active, setActive }: any) => {
-  // const [mobileActive, setMebilelActive] = useState<boolean>(false);
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.overflow = active ? "hidden" : "auto";
+    }
+  }, [active]);
   return (
     <>
-      {/* <ul className="hidden desktop:flex tablet:flex gap-x-10">
-        {menus.map((men) => (
-          <li
-            className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400"
-            key={men.id}
-          >
-            <a href="#">{men.link}</a>
-          </li>
-        ))}
-      </ul> */}
-
-      {/* <nav className="nav"> */}
       <div
         className={active ? "mobile active" : "mobile"}
         onClick={() => setActive(false)}

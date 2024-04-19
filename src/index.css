@@ -16,6 +16,10 @@ code {
 @tailwind components;
 @tailwind utilities;
 
+/* html {
+  overflow-y: scroll !important;
+} */
+
 body {
   cursor: url("./Image/Cursor/1111.png"), auto;
 }
@@ -385,24 +389,28 @@ add scrollbar .window {
 .mobile {
   height: 100vh;
   width: 100vw;
-  background-color: #60a5fa;
+  /* background-color: #60a5fa; */
+  background-color: rgba(0, 0, 255, 0.38);
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0;
+  /* opacity: 0; */
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms linear;
+  /* transition: opacity 250ms linear; */
+  transition: visibility 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile.active {
-  opacity: 1;
+  /* opacity: 1; */
+  visibility: visible;
   pointer-events: all;
 }
 
 .mobile-content {
   padding: 20px;
   position: absolute;
-  width: 70%;
+  width: 80%;
   height: 100%;
   background-color: #fff;
   top: 0;
@@ -410,7 +418,8 @@ add scrollbar .window {
   transform: translateX(-100%);
   overflow-y: hidden;
   z-index: 9999;
-  transition: transform 250ms linear;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: 0.9s all; */
 }
 
 .mobile-content.active {
