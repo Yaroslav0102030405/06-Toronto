@@ -306,7 +306,7 @@ add scrollbar .window {
   justify-content: center;
 } */
 
-.mobile-menu {
+.mobile-open {
   display: flex;
   width: 30px;
   height: 30px;
@@ -315,7 +315,7 @@ add scrollbar .window {
   cursor: pointer;
 }
 
-.mobile-menu::before {
+.mobile-open::before {
   content: "";
   position: absolute;
   top: 0;
@@ -324,7 +324,7 @@ add scrollbar .window {
   height: 3px;
 }
 
-.mobile-menu span {
+.mobile-open span {
   content: "";
   position: absolute;
   top: 14px;
@@ -333,13 +333,53 @@ add scrollbar .window {
   height: 3px;
 }
 
-.mobile-menu::after {
+.mobile-open::after {
   content: "";
   position: absolute;
   bottom: 0;
   width: 30px;
   background-color: #60a5fa;
   height: 3px;
+}
+
+/* close */
+
+.mobile-close {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.mobile-close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  background-color: #60a5fa;
+  height: 3px;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+/* .mobile-menu2 span {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 30px;
+  background-color: #60a5fa;
+  height: 3px;
+} */
+
+.mobile-close::after {
+  content: "";
+  position: absolute;
+  bottom: 48%;
+  width: 30px;
+  background-color: #60a5fa;
+  height: 3px;
+  transform: rotate(45deg) translate(0, 50%);
 }
 
 .mobile {
@@ -360,9 +400,7 @@ add scrollbar .window {
 }
 
 .mobile-content {
-  padding-top: 100px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 20px;
   position: absolute;
   width: 70%;
   height: 100%;

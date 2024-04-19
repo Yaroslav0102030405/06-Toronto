@@ -29,6 +29,12 @@ const Menu = ({ active, setActive }: any) => {
           className={active ? "mobile-content active" : "mobile-content"}
           onClick={(e) => e.stopPropagation()}
         >
+          <button
+            className="mobile-close tablet:hidden"
+            onClick={() => setActive(false)}
+          >
+            {/* <span /> */}
+          </button>
           <ul className="flex flex-col text-center gap-[15px]">
             <li className="text-xl text-blue-400 hover:text-red-400 focus:text-red-400">
               <a href="#about" onClick={() => setActive(false)}>

@@ -20,7 +20,7 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <Logo />
             <button
-              className="mobile-menu tablet:hidden"
+              className="mobile-open tablet:hidden"
               onClick={() => setMobilelActive(true)}
             >
               <span />
