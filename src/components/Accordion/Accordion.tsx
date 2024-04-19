@@ -39,7 +39,7 @@ const Accordion = ({
           <div className="accordion__wapper flex flex-col gap-2.5 max-w-[600px] m-auto ">
             {/* <div className="items-center accordion "> */}
             <button
-              className="text-xl flex items-center justify-between p-3.5 border rounded-xl hover:bg-white"
+              className="btn-accordion text-xl flex items-center justify-between p-3.5 border rounded-xl hover:bg-white"
               onClick={() => setAccordion(!isAccordion)}
             >
               <span className="text-blue-400">{title}</span>

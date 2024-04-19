@@ -8,7 +8,7 @@ const Button = () => {
     <>
       <button
         onClick={() => setModalActive(true)}
-        className="block mx-auto py-5 px-7 bg-blue-400 font-bold text-lg rounded-xl hover:bg-white focus:bg-white"
+        className="block py-5 mx-auto text-lg font-bold bg-blue-400 btn-open px-7 rounded-xl hover:bg-white focus:bg-white"
         type="button"
       >
         Free consultation
@@ -60,7 +60,7 @@ const Button = () => {
               required
             />
           </div>
-          <p className="form__agreement text-center text-black mb-6">
+          <p className="mb-6 text-center text-black form__agreement">
             By clicking the button, I give my consent to the processing of my
             personal data
           </p>

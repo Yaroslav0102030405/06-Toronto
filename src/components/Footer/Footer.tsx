@@ -8,23 +8,23 @@ import { ReactComponent as Linkedin } from "../../Image/svg/linkedin 1.svg";
 const Footer = () => {
   return (
     <>
-      <section className="footer bg-black py-12">
+      <section className="py-12 bg-black footer">
         <div className="container desktop mx-auto px-3.5">
           <Logo />
-          <div className="wapper flex items-start justify-between flex-wrap">
+          <div className="flex flex-wrap items-start justify-between wapper">
             <div className="left">
               <p className="text-blue-400 mt-5 mb-7 max-w-[363px] text-lg font-medium">
                 Our company is engaged in the installation of household
                 appliances in Toronto. We have more than 27 services
               </p>
-              <p className="text-blue-400 text-lg">
+              <p className="text-lg text-blue-400">
                 &copy; 2024. All rights reserved
               </p>
             </div>
             <ul className="flex gap-5 mt-5">
               <li>
                 <a
-                  className=" fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
+                  className="social fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
                   href="#"
                 >
                   <Insta />
@@ -32,7 +32,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
+                  className="social fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
                   href="#"
                 >
                   <Twitter />
@@ -40,7 +40,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
+                  className="social fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
                   href="#"
                 >
                   <Facebook />
@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
+                  className="social fill-[#6495ED] hover:fill-[#FFFFFF] focus:fill-[#FFFFFF]"
                   href="#"
                 >
                   <Linkedin />

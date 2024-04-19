@@ -61,7 +61,7 @@ const Gallery: React.FC<ImagesProps> = ({ images }) => {
               />
               <div className="fullScreenImage">
                 <img
-                  className="m-auto mobile:w-[100%] tablet:w-[75%] desktop:w-[50%]"
+                  className="gallery m-auto mobile:w-[100%] tablet:w-[75%] desktop:w-[50%]"
                   src={images[sliderNumber].img}
                   alt="images"
                 />
